@@ -1,0 +1,19 @@
+body {
+  max-width:800px;
+  margin:100px;
+}
+
+
+
+/* header wrapped in body: what_is_css.html */
+header {
+  background-color:green;
+  color:red;
+  margin:50px;
+}
+
+
+/* wrapped by body */
+footer {
+  margin-top:500px;
+}
