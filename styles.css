@@ -10,8 +10,14 @@ header {
   background-color:green;
   color:red;
   margin:50px;
+  padding-left:80px;
+  border: 10px solid;
 }
 
+/* child of header */
+h1 {
+  padding-left:100px;
+}
 
 /* wrapped by body */
 footer {
