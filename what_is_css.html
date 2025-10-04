@@ -6,6 +6,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>How to use css</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
@@ -14,11 +15,16 @@
       <img class="css_box_dimensions" src="boxdim.png" alt="css_boxmodel">
     </header>
 
+
+
     <main>
 
       <div>
         <h3>All elements and tags use the css box model</h3>
         <p>Css has properties. not attributes</p>
+
+        <p>parent wraps child</p>
+        <p>child may override parent</p>
 
         <p>css reference with all properties more than 500<p>
         <p>https://developer.mozilla.org/en-US/docs/Web/CSS/Reference</p>
@@ -27,7 +33,10 @@
 
       <section>
         <h2>margin_property</h2>
-        <p>space outside an element. outer sacing</p>
+        <p>space outside an element separating it from other elements. outer spacing</p>
+        <p>spacing between the elements on the page</p>
+        <p>invisible space pushing other elements away</p>
+        <p>able to specify direction</p>
 
         <p>margin:0 auto</p>
         <p>centers in the middle of the screen</p>
@@ -37,7 +46,8 @@
 
         <p>margin-bottom, margin-top</p>
    
-        <p>on_all_sides:50px</p>
+        <p>margin:10px</p>
+        <p>will_apply_on_all_sides:10px</p>
 
         <h3>where_to_use:</h3>
         <ul>
@@ -46,14 +56,21 @@
       </section>
 
 
+
+
+/* border */    
+
+
       <section>
         <h2>border</h2>
         <p>has_different_styles,colors,widths</p>
 
         <p>border:15px solid black</p>
 
-        <p>border-radius:10px</p>
-        <p>border-radis gives rounded corners</p>
+        <p>border-radius:5px</p>
+        <p>border-radius gives slightly rounded corners</p>
+
+        <p>border-radius:50px will give a box some extremely round corners</p>
 
         <h3>where_to_use:</h3>
         <ul>
@@ -62,10 +79,16 @@
 
 
 
+
+
+
+
       <section>
         <h2>padding</h2>
-        <p>in between the content and the border</p>
+        <p>space in between the content and the border</p>
         <p>adds space inside an element</p>
+
+        <p>padding:10px</p>
 
         <p>50px on all sides</p>
         <p>50px 0 20px 5px</p>
