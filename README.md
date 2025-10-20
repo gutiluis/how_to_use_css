@@ -4,7 +4,7 @@ Choose an html and write the css style:
 - HTML
 
 Get-Help:
-- python module to write html templastes
+- python module to write html templastes named dominate
 
 Objective:
 - CSS
