@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAI-ARIA Role Categories</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.5;
+        margin: 2rem;
+        max-width: 900px;
+      }
+      h1, h2, h3 {
+        color: #2c3e50;
+      }
+      .role-category {
+        border-left: 4px solid #3498db;
+        margin: 1rem 0;
+        padding-left: 1rem;
+      }
+      .role-list {
+        margin-left: 1rem;
+        list-style-type: disc;
+      }
+      .note {
+        font-style: italic;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <h1>WAI-ARIA Categories: Roles, Properties, States</h1>
+      <p class="note">
+        This page outlines WAI-ARIA categories and their purposes for accessibility. There are 3 categories...
+      </p>
+    </header>
+
+    <main>
+
+      <section>
+        <h2>Additional html attributes types that can be applied to elements to provide additional semantics and improve accessibility:</h2>
+        <ol>
+          <li>Role Category:
+            <ul>
+              <li>Describes what an element is...</li>
+            </ul>
+          </li>
+          <li>Property Category:
+            <ul>
+              <li>Labels, relationships, additional semmantic info</li>
+            </ul>
+          </li>
+          <li>States Category:
+            <ul>
+              <li>Describe whether is active, selected, checked, hidden, etc...</li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+
+      <section class="role-category">
+        <h2>1. Document Structure Roles</h2>
+        <p>Define content as a distinct document or region to aid navigation and understanding.</p>
+        <ul class="role-list">
+          <li>document</li>
+          <li>article</li>
+          <li>region</li>
+        </ul>
+      </section>
+
+      <section class="role-category">
+        <h2>2. Widget Roles</h2>
+        <p>Represent interactive elements that users can manipulate. Communicate behavior to assistive technology.</p>
+        <ul class="role-list">
+          <li>button</li>
+          <li>checkbox</li>
+          <li>radio</li>
+          <li>slider</li>
+          <li>textbox</li>
+          <li>combobox</li>
+          <li>tab</li>
+          <li>menuitem</li>
+        </ul>
+      </section>
+
+      <section class="role-category">
+        <h2>3. Landmark Roles</h2>
+        <p>Identify key page regions for quick navigation.</p>
+        <ul class="role-list">
+          <li>banner (header)</li>
+          <li>navigation</li>
+          <li>main</li>
+          <li>complementary (sidebar)</li>
+          <li>contentinfo (footer)</li>
+          <li>search</li>
+        </ul>
+      </section>
+
+      <section class="role-category">
+        <h2>4. Live Region Roles</h2>
+        <p>Mark areas where content updates dynamically. Assistive technologies announce updates.</p>
+        <ul class="role-list">
+          <li>status</li>
+          <li>alert</li>
+          <li>log</li>
+          <li>marquee</li>
+        </ul>
+      </section>
+
+      <section class="role-category">
+        <h2>5. Window Roles</h2>
+        <p>Represent top-level UI windows or overlays. Define focus and interaction scope.</p>
+        <ul class="role-list">
+          <li>dialog</li>
+          <li>alertdialog</li>
+          <li>application</li>
+        </ul>
+      </section>
+
+      <section class="role-category">
+        <h2>6. Abstract Roles</h2>
+        <p>Conceptual roles used in the specification to organize other roles. <strong>Do not use directly in HTML.</strong></p>
+        <ul class="role-list">
+          <li>range (group of slider, spinbutton, scrollbar)</li>
+          <li>select (group of listbox, tree, grid)</li>
+          <li>widget</li>
+          <li>structure</li>
+        </ul>
+      </section>
+
+    </main>      
+
+      <section>
+        <h2>WAI-ARIA enhances accessibility for dynamic and interactive content. Aria communicates properly the assistive technologies</h2>
+        <ul>
+          <li>Such as: screen readers, screen magnifiers, speech recognition magnifiers, braille displays...</li>
+        </ul>
+      </section>
+
+
+    <footer>
+      <p class="note">All roles shown are purely theoretical; no interactive examples included. Use semantic HTML whenever possible.</p>
+    </footer>
+
+  </body>
+</html>
