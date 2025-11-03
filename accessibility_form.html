@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principles of an accessible form.</title>
+    <style>
+      .use_with_focus:focus {
+        outline:3px solid #ffbf47;
+        outline-offset:2px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="index.html" class="use_with_focus" tabindex="0">Home</a>
+    <a href="#keyboard_main_accessibility" class="use_with_focus" tabindex="0">skip to main</a>
+    <header>
+      <h1>Accessible Form in HTML:</h1>
+    </header>
+
+    <main id="keyboard_main_accessibility">
+      <h2>Form with accessibility compliance:</h2>
+      <section>
+        <h3>avoid unnecessary questions</h3>
+        <ul>
+          <li>minimize questions per screen and limit number of tasks presented to the user
+            <ul>
+              <li>faster load times and reduce cognitive download</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section>
+      <h3>provide context clues</h3>
+      <dl>
+        <dt>chunking for cognitive disability</dt>
+        <dd>breaking a form into steps</dd>
+      </dl>
+      <ul>
+        <li>remind user of form purpose</li>
+        <li>clearly label the current step</li>
+        <li>how many tasks have been completed?</li>
+        <li>how many steps remain?</li>
+      </ul>
+      </section>
+
+      <section>
+      <h3>group related questions</h3>
+      <ul>
+        <li>reduce cognitive load</li>
+      </ul>
+      </section>
+
+      <section>
+      <h3>use clear input labels. not placeholder text.</h3>
+      <div>
+        <label for="accessibility_compliant">Enter name:</label>
+        <input aria-required="true" type="text" class="use_with_focus" id="accessibility_compliant" tabindex="0">
+        <label for="non_accessibility_compliant">Placeholder</label>
+        <input aria-required="false" type="text" class="use_with_focus" id="non_accessibility_compliant" placeholder="placeholder" tabindex="0">
+      </div>
+      </section>
+
+      <section>
+        <h3>make focus indicators obvious</h3>
+        <ul>
+          <li>for mobile screens, labels should go above the input, not besides it</li>
+        </ul>
+        </section>
+
+      <section>
+      <h3>help users spot and correct errors</h3>
+      <ul>
+        <li>input assistance</li>
+      </ul>
+      </section>
+
+    </main>
+    <footer>
+      <h3>Resources:</h3>
+      <ul>
+        <li><a target="_blank" class="use_with_focus" tabindex="0" href="https://baymard.com/lists/cart-abandonment-rate">cart-abandonment-rate statistics</a></li>
+        <li><a target="_blank" class="use_with_focus" tabindex="0" href="https://uxdesign.cc/disabled-user-testing-a-cautionary-tale-b6cf64425adb">user accessibility</a></li>
+        <li><a target="_blank" class="use_with_focus" tabindex="0" href="https://www.smashingmagazine.com/2017/05/better-form-design-one-thing-per-page/">form design case</a></li>
+        <li><a target="_blank" class="use_with_focus" tabindex="0" href="https://www.smashingmagazine.com/2018/08/best-practices-for-mobile-form-design/">mobile form design</a></li>
+        <li><a target="_blank" class="use_with_focus" tabindex="0" href="https://blog.prototypr.io/designing-accessible-forms-82f2ea11697f">designing accessible forms</a></li>
+        <li><a target="_blank" class="use_with_focus" tabindex="0" href="https://uxdesign.cc/10-tips-for-designing-accessible-forms-a016dae8e9aa">10 foundational rules for accessible forms</a></li>
+        <li><a target="_blank" class="use_with_focus" tabindex="0" href="https://www.usability.gov/how-to-and-tools/methods/recruiting-usability-test-participants.html">recruiting usability participants</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
